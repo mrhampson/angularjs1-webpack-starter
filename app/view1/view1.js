@@ -11,8 +11,14 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', function($scope) {
   $scope.participants = [
-    {name: "Marshall Hampson"},
-    {name: "Participant 2"}
+    {
+      name: "Marshall Hampson",
+      offset: -8
+    },
+    {
+      name: "Participant 2",
+      offset: 0
+    }
   ];
   $scope.test = "testing";
 })

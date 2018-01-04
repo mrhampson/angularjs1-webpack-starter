@@ -13,7 +13,9 @@ angular.module('myApp')
 .component('participantBar', {
   template: `
     <ul>
-      <li ng-repeat="participant in $ctrl.participants">{{participant.name}}</li>
+      <li ng-repeat="participant in $ctrl.participants">
+        {{participant.name}} (UTC{{participant.offset}})
+      </li>
       <li>
         <input type="text" ng-model="$ctrl.newParticipant" placeholder="Enter another ..."></input>
         <button ng-click="$ctrl.handleAdd()">Add</button>
