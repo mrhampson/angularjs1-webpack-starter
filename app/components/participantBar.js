@@ -18,8 +18,7 @@ function ParticpantBarController() {
   };
 }
 
-angular.module('myApp')
-.component('participantBar', {
+const participantBarComponent = {
   template: `
     <h1>Participants</h1>
     <ul>
@@ -37,4 +36,5 @@ angular.module('myApp')
     participants: '='
   },
   controller: ParticpantBarController
-});
+};
+export default participantBarComponent;
