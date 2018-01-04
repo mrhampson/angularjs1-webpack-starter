@@ -1,0 +1,53 @@
+participant-bar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #2ecc71;
+}
+
+participant-bar h1 {
+  padding-left: 20px;
+  color: white;
+}
+
+participant-bar ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+participant-bar li {
+  color: white;
+  height: 5em;
+  line-height: 5em;
+  padding-left: 20px;
+}
+
+participant-bar li span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+participant-bar .entry-field {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+}
+
+participant-bar .entry-field  .name-field {
+  color: red;
+  width: 70%;
+}
+
+participant-bar .entry-field  .offset-field {
+  width: 20%;
+  color: red;
+}
+
+participant-bar .entry-field button {
+  width: 10%;
+  padding: 0px;
+}
