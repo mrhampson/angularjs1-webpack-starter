@@ -1,5 +1,7 @@
 'use strict';
 
+require('./participantBar.css')
+
 function ParticpantBarController() {
   this.handleAdd = function() {
     var parsedOffset = parseFloat(this.newParticipant.offset);
@@ -18,8 +20,7 @@ function ParticpantBarController() {
   };
 }
 
-angular.module('myApp')
-.component('participantBar', {
+const participantBarComponent = {
   template: `
     <h1>Participants</h1>
     <ul>
@@ -37,4 +38,5 @@ angular.module('myApp')
     participants: '='
   },
   controller: ParticpantBarController
-});
+};
+export default participantBarComponent;
