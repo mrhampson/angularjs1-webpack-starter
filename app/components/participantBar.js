@@ -1,5 +1,7 @@
 'use strict';
 
+require('./participantBar.css')
+
 function ParticpantBarController() {
   this.handleAdd = function() {
     var parsedOffset = parseFloat(this.newParticipant.offset);

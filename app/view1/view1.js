@@ -3,6 +3,8 @@
 import angular from 'angular';
 import ngRoute from 'angular-route'
 
+require('./view1.css')
+
 const view1Module = angular.module('myApp.view1', [ngRoute])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {

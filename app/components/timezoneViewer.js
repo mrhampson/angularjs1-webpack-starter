@@ -1,5 +1,7 @@
 'use strict';
 
+require('./timezoneViewer.css')
+
 function TimeZoneViewerController() {
 
 }

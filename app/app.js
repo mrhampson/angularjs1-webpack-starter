@@ -1,11 +1,13 @@
 'use strict';
 
 import angular from 'angular';
-import timezoneViewer  from "./components/timezoneViewer.js";
+import timezoneViewer  from './components/timezoneViewer.js';
 import participantBar from './components/participantBar';
 import ngRoute from 'angular-route';
-import view1Module from "./view1/view1.js"
-import view2Module from "./view2/view2.js"
+import view1Module from './view1/view1.js'
+import view2Module from './view2/view2.js'
+
+require('./app.css')
 
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
